@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Black Boy Gaming</title>
+	<title>Whatsapp Message a number</title>
 	<style>
 		.center {
 			position: absolute;
@@ -14,13 +14,22 @@
 </head>
 <body>
 	<div class = "center">
-		<h3>Hey! this is again testing...</h3>
+		<h3>Text any whatsapp number</h3>
+		<form>
+		<label>whatsapp number</label>&nbsp;&nbsp;<input type = "tel" placeholder="whatsapp number" id = "Wno" pattern="[0-9]{10} required">
 		<br>
-		<input type = "submit" onclick="NewTab()">
+		<label>Text</label>&nbsp;&nbsp;<input type = "number" placeholder="Text you wanna send" id = "Wtext" required>
+		<br>
+		<input type = "submit" onclick="sendMessage()">
+		</form>
+		<br>
+		<p id = "urlcode"></p>
 	</div>
 	<script>
-		function NewTab() {
-            window.open("https://wa.me/916300107549?text=Hello%20I%20am%20Rahul", "_blank");
+		function sendMessage() {
+			var texturl = encodeURI(document.getElementById("wtext"));
+			document.getElementById("urlcode").innerHTML = "url generated is https://wa.me/91"document.getElementById('wno').value"?text="texturl"";
+           		window.open("https://wa.me/91"document.getElementById("wno").value"?text="texturl"", "_blank");
         }
 	</script>
 </body>
