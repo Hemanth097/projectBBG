@@ -40,7 +40,7 @@
 		}
 		function sendMessage() {
 			x = 1;
-			var texturl = encodeURI(document.getElementById("wtext").value);
+			var texturl = encodeURIComponent(document.getElementById("wtext").value);
 			document.getElementById("urlcode").innerHTML = "url generated is https://wa.me/91"document.getElementById('wno').value"?text="texturl"";
            		window.open("https://wa.me/91"document.getElementById("wno").value"?text="texturl"", "_blank");
         }
