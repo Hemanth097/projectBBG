@@ -24,17 +24,18 @@
 			<tr><td>
 			<label>Text</label></td><td><input type = "text" placeholder="Text you wanna send" id = "wtext" required>
 			</td></tr>
+			<br>
 			<tr><td>
 			<input type = "submit" onclick="sendMessage()" placeholder = "Send message" name = "submit">
 			</td></tr>
 		</table>
 		</form>
 		<br>
-		<p id = "urlcode"></p>
+		<p id = "urlcode">Hello</p>
 	</div>
 	<script>
 		x = 0;
-		if(x = 0){
+		if(x == 0){
 			document.getElementById('urlcode').innerHTML = "the code is still out";
 		}
 		function sendMessage() {
