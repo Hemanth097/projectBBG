@@ -34,14 +34,11 @@
 		<p id = "urlcode">Hello</p>
 	</div>
 	<script>
-		x = 0;
-		if(x == 0){
-			document.getElementById('urlcode').innerHTML = "the code is still out";
-		}
+		
 		function sendMessage() {
-			x = 1;
+			document.getElementById("urlcode").innerHTML = "at least it goes inside the function";
 			var texturl = encodeURIComponent(document.getElementById("wtext").value);
-			document.getElementById("urlcode").innerHTML = "url generated is https://wa.me/91"document.getElementById('wno').value"?text="texturl"";
+			document.getElementById("urlcode").innerHTML = "url generated is https://wa.me/91" document.getElementById('wno').value "?text="texturl"";
            		window.open("https://wa.me/91"document.getElementById("wno").value"?text="texturl"", "_blank");
         }
 	</script>
